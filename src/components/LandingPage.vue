@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
   <div class="container-fluid">
     <div class="bg-info size">
@@ -25,23 +26,23 @@
         </div>
       </div>
     </div>
-    
+
     <div class="row hero">
       <div class="col-12 col-md-12 col-lg-12">
         <div class="jumbotron-fluid content">
           <div class="row">
-          <div class="col-12-sm col-md-6">
-          
+            <div class="col-12-sm col-md-6">
+
+            </div>
+            <div class="col-12-sm col-6-md">
+              <h1 class="display-4">{{head}}</h1>
+              <h3>{{subHead}}</h3>
+              <a class="btn btn-primary" href="#about" role="button">
+                {{btn}}
+              </a>
+            </div>
           </div>
-     <div class="col-12-sm col-6-md">
-   <h1 class="display-4">{{head}}</h1>
-          <h3>{{subHead}}</h3>
-          <a class="btn btn-primary" href="#about" role="button">
-            {{btn}}
-          </a>
-    </div>
-    </div>
-   </div>
+        </div>
       </div>
     </div>
     <Feature/>
@@ -50,7 +51,7 @@
 </template>
 
 <script>
-import Feature from './Feature'
+  import Feature from './Feature'
   import Form from './Form'
   export default {
     name: 'LandingPage',
@@ -63,8 +64,8 @@ import Feature from './Feature'
         head: 'Simplify Payroll',
         subHead: 'With Software and service designed for your system',
         btn: 'Learn More',
-       
-        
+
+
       }
     }
   }
@@ -77,30 +78,32 @@ import Feature from './Feature'
     box-sizing: border-box;
   }
 
-  
+
   div.jumbotron-fluid.content {
-    margin:0 auto;
-    width:80vw;
+    margin: 0 auto;
+    width: 80vw;
     height: 70vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    text-align:center;
+    text-align: center;
     background: url('../assets/hero.png') right bottom/contain no-repeat scroll;
   }
 
- h1{
-   font-size:1.5rem;
-   font-weight:700;
-   line-height:16px;
-   margin-bottom: 40px;
- }
-h3{
-  font-size:1.3rem;
-  margin-bottom:25px;
-  font-weight: 500;
-}
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 40px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    font-weight: 500;
+  }
+
   .btn-primary {
     padding: 10px 20px;
     margin-top: 15px;
@@ -135,38 +138,38 @@ h3{
     .display-4 {
       font-size: 2.3rem;
     }
-     div.jumbotron-fluid.content {
-        background: url('../assets/hero.png') right bottom/contain no-repeat scroll;
-         width:80vw;
-    height: 90vh;
-    paddin:10px;
-     }
+    div.jumbotron-fluid.content {
+      background: url('../assets/hero.png') right bottom/contain no-repeat scroll;
+      width: 80vw;
+      height: 90vh;
+      padding: 10px;
+    }
   }
 
   @media only screen and (min-width: 1024px) {
     h1 {
       font-size: 2.0rem;
       text-align: center;
-       line-height:32px;
+      line-height: 32px;
     }
     h3 {
       font-size: 1.3rem;
       margin-bottom: 15px;
     }
-   
+
   }
 
   @media only screen and (min-width: 1900px) {
     h1 {
       font-size: 2.3rem;
       text-align: center;
-     
+
     }
     h3 {
       font-size: 2.0rem;
       margin-bottom: 20px;
     }
-    
+
   }
 
   a {
