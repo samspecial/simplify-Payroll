@@ -125,7 +125,8 @@
     .display-4 {
       font-size: 1.8rem;
     }
-    .btn-primary {
+    .btn-primary,
+    .btn-info {
       margin-top: 50px;
       padding: 5px 10px;
     }
