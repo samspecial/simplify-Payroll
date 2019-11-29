@@ -108,7 +108,8 @@
     font-weight: 500;
   }
 
-  .btn-primary {
+  .btn-primary,
+  .btn-info {
     padding: 10px 20px;
     margin-top: 15px;
   }
