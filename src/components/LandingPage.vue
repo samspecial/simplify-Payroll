@@ -37,7 +37,7 @@
             <div class="col-12-sm col-6-md">
               <h1 class="display-4">{{head}}</h1>
               <h3>{{subHead}}</h3>
-              <a class="btn btn-primary" href="#about" role="button">
+              <a class="btn btn-info" href="#about" role="button">
                 {{btn}}
               </a>
             </div>
@@ -89,6 +89,10 @@
     align-items: center;
     text-align: center;
     background: url('../assets/hero.png') right bottom/contain no-repeat scroll;
+  }
+
+  .size {
+    padding: 10px 20px;
   }
 
   h1 {
